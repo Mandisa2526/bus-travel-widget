@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" >
+        <div class="header" >
+            <h1>Bus Travel Widget</h1>
+            
+        </div>
+        <div class="main" >
+            
+            <div class="content" >
+                <div>
+                    <h4>Points:</h4>
+                    <input class ="input" type="text" placeholder=" " />
+                </div>
+                
+                <div action="/action_page.php">
+                    <label for="location"><h4>start location:</h4></label>
+                    <select class ="locations" name="cars">
+                        <option value="khaya">Khayelitsha</option>
+                        <option value="Dun">Dunoon</option>
+                        <option value="Mitch">Mitchells Plain</option>
+                    </select> 
+                </div>
+                
+                <div class="travel">
+                    <div>
+                       <h3>Travel Times</h3>
+                       <input type="radio" name="billItemType" class="TravelTimes" value="Peak">
+                       <span class="label-body">Peak</span>
+                       <input type="radio" name="billItemType" class="TravelTimes" value="OffPeak">
+                       <span class="label-body">Off Peak</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="Return" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Return Trip</label><br>
+                    </div>
+                    
+                    <div class = "btn">
+                        <button class ="button">Calculate</button>
+                    </div>
+                    
+                </div>
+                <div>
+                    <h3> Calculations</h3>
+                    <h4>Number of single trips:</h4>
+                    <tr>
+                        <td></td>
+                        <td><span class="singleTrip">0</span></td>
+                    </tr>
+                    <h4>Price per trip(single):</h4>
+                    <tr>
+                        <td></td>
+                        <td><span class="price">0</span></td>
+                    </tr>
+                    <h4>Number of Return Trips:</h4>
+                    <tr>
+                        <td></td>
+                        <td><span class="returntrips">0</span></td>
+                    </tr>
+                    <h4>Price Per trip(rturn):</h4>
+                    <tr>
+                        <td></td>
+                        <td><span class="Return">0</span></td>
+                    </tr>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer" >
+            
+        </div>
+    </div>
+    
+</body>
+<script src="JS/bus-travel-Dom.js"></script>
+<script src="JS/bus-travel.js"></script>
+</html>
