@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
             <div class="content" >
                 <div>
                     <h4>Points:</h4>
-                    <input class ="input" type="text" placeholder=" " />
+                    <input class ="input" type="text" placeholder=" " value=""/>
                 </div>
                 
                 <div action="/action_page.php">
@@ -37,13 +38,13 @@
                        <input type="radio" name="billItemType" class="TravelTimes" value="OffPeak">
                        <span class="label-body">Off Peak</span>
                     </div>
-                    <div>
+                    <div class="checkboxs">
                         <input type="checkbox" class="Return" name="vehicle1" value="Bike">
                         <label for="vehicle1"> Return Trip</label><br>
                     </div>
                     
                     <div class = "btn">
-                        <button class ="button">Calculate</button>
+                        <button class ="button buttons">Calculate</button>
                     </div>
                     
                 </div>
@@ -64,10 +65,10 @@
                         <td></td>
                         <td><span class="returntrips">0</span></td>
                     </tr>
-                    <h4>Price Per trip(rturn):</h4>
+                    <h4>Price Per trip(return):</h4>
                     <tr>
                         <td></td>
-                        <td><span class="Return">0</span></td>
+                        <td><span class="pricePerReturnTrip">0</span></td>
                     </tr>
                 </div>
                 
